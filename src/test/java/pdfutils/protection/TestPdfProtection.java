@@ -40,8 +40,8 @@ public class TestPdfProtection {
 		deleteProtectedFiles(testFileFolder, TEST_CUSTOM_SUFFIX);
 	}
 
-	private static void deleteProtectedFiles(File file,
-			String protectedFileSuffix) {
+	private static void deleteProtectedFiles(final File file,
+			final String protectedFileSuffix) {
 
 		File[] protectedFiles = file.listFiles(new FilenameFilter() {
 
